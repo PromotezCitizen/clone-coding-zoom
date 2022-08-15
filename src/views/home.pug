@@ -10,11 +10,21 @@ html(lang="en")
         header 
             h1 Nono
         main
-            form#nick
-                input(type="text", placeholder="write a nickname", requierd)
-                button Sends
-            ul
-            form#msg
-                input(type="text", placeholder="write a msg", requierd)
-                button Send
+            div#welcome
+                form
+                    input(placeholder="room name", requierd, type="test")
+                    button Enter Room
+                h4 Open Rooms
+                ul
+            
+            div#room
+                h3 
+                ul
+                form#name
+                    input(placeholder="nickname", requierd, type="test")
+                    button Send
+                form#msg
+                    input(placeholder="message", requierd, type="test")
+                    button Send
+        script(src="/socket.io/socket.io.js")
         script(src="/public/js/app.js")
